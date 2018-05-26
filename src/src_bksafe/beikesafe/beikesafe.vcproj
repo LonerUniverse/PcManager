@@ -18,7 +18,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\..\..\product\win32d"
-			IntermediateDirectory="$(ConfigurationName)"
+			IntermediateDirectory="..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="1"
 			UseOfATL="0"
 			ATLMinimizesCRunTimeLibraryUsage="false"
@@ -68,10 +68,11 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="rpcrt4.lib BeikeUtils.lib scanlib.lib kwslib.lib svclib.lib"
+				AdditionalDependencies="rpcrt4.lib BeikeUtils.lib scanlib.lib kwslib.lib svclib.lib lib_jsonMTD.lib"
 				OutputFile="$(OutDir)\KSafe.exe"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="E:\winsdk\v6.1\Lib;../../import/kxe_improve_lib/win32d;..\..\..\lib\win32d"
+				AdditionalLibraryDirectories="..\..\..\src\import\kxe_improve_lib\win32d;..\..\..\lib\win32d"
+				IgnoreDefaultLibraryNames="atlsd.lib"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(TargetDir)$(TargetName).pdb"
 				GenerateMapFile="true"
@@ -107,7 +108,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="..\..\..\product\win32"
-			IntermediateDirectory="$(ConfigurationName)"
+			IntermediateDirectory="..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="1"
 			ATLMinimizesCRunTimeLibraryUsage="false"
 			CharacterSet="1"
@@ -158,7 +159,7 @@
 				AdditionalDependencies="rpcrt4.lib BeikeUtils.lib scanlib.lib kwslib.lib svclib.lib"
 				OutputFile="$(OutDir)\KSafe.exe"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="E:\winsdk\v6.1\Lib;../../import/kxe_improve_lib/win32/base_lib;..\..\..\lib\win32"
+				AdditionalLibraryDirectories="..\..\import\kxe_improve_lib\win32\base_lib;..\..\..\lib\win32"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				OptimizeReferences="2"
@@ -195,7 +196,7 @@
 		<Configuration
 			Name="Release_Baidu|Win32"
 			OutputDirectory="..\..\..\product\win32"
-			IntermediateDirectory="$(ConfigurationName)"
+			IntermediateDirectory="..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="1"
 			ATLMinimizesCRunTimeLibraryUsage="false"
 			CharacterSet="1"

@@ -17,8 +17,8 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="../../../../product/win32d"
-			IntermediateDirectory="$(ConfigurationName)"
+			OutputDirectory="..\..\..\..\product\win32d"
+			IntermediateDirectory="..\..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="2"
 			UseOfATL="1"
 			CharacterSet="1"
@@ -41,7 +41,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="E:\winsdk\v6.1\Include;../../../Import;../../../Import/Public;../../../Publish;../../../Import/kxe_improve_publish;../../../Import/kxe_improve_publish\scom\scom;../../../Publish/kws/;../../../..//include;../../../import/kws_publish"
+				AdditionalIncludeDirectories="../../../Import;../../../Import/Public;../../../Publish;../../../Import/kxe_improve_publish;../../../Import/kxe_improve_publish\scom\scom;../../../Publish/kws/;../../../../include;../../../import/kws_publish"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;NETMON_EXPORTS;NETSTAT_DLL"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -65,7 +65,8 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ksafedb.lib kwslibmd.lib scanlibmd.lib svclibmd.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="E:\winsdk\v6.1\Lib;../../../Import/kxe_improve_lib/win32d/;../../../../lib/win32d/"
+				AdditionalLibraryDirectories="../../../Import/kxe_improve_lib/win32d/;../../../../lib/win32d/;../../../Import/kxe_improve_lib/win32/base_lib"
+				IgnoreDefaultLibraryNames="atlsd.lib;MSVCRT.lib"
 				GenerateDebugInformation="true"
 				SubSystem="2"
 				TargetMachine="1"
@@ -97,8 +98,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="../../../../product/win32"
-			IntermediateDirectory="$(ConfigurationName)"
+			OutputDirectory="..\..\..\..\product\win32"
+			IntermediateDirectory="..\..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="2"
 			CharacterSet="1"
 			WholeProgramOptimization="1"
@@ -121,7 +122,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="E:\winsdk\v6.1\Include;../../../Import;../../../Import/Public;../../../Publish;../../../Import/kxe_improve_publish;../../../Import/kxe_improve_publish\scom\scom;../../../Publish/kws/;../../../..//include;../../../import/kws_publish"
+				AdditionalIncludeDirectories="E:\winsdk\v6.1\Include;../../../Import;../../../Import/Public;../../../Publish;../../../Import/kxe_improve_publish;../../../Import/kxe_improve_publish\scom\scom;../../../Publish/kws/;../../../../include;../../../import/kws_publish"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;NETMON_EXPORTS;NETSTAT_DLL"
 				RuntimeLibrary="2"
 				UsePrecompiledHeader="2"
@@ -144,7 +145,7 @@
 				AdditionalDependencies="ksafedb.lib kwslibmd.lib scanlibmd.lib svclibmd.lib"
 				OutputFile="$(OutDir)\netstat.dll"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="E:\winsdk\v6.1\Lib;../../../Import/kxe_improve_lib/win32/base_lib;../../../../lib/win32/"
+				AdditionalLibraryDirectories="../../../Import/kxe_improve_lib/win32/base_lib;../../../../lib/win32/"
 				GenerateManifest="false"
 				ModuleDefinitionFile="netmon.def"
 				GenerateDebugInformation="true"

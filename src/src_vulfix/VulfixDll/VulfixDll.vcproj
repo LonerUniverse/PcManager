@@ -18,7 +18,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="..\..\..\product\win32d"
-			IntermediateDirectory="$(ConfigurationName)"
+			IntermediateDirectory="..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="2"
 			CharacterSet="1"
 			>
@@ -62,8 +62,10 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="BeikeUtils.lib libDownload.lib"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="E:\winsdk\v6.1\Lib;..\..\..\lib\win32"
+				AdditionalLibraryDirectories="..\..\..\lib\win32d"
+				IgnoreDefaultLibraryNames="libcmt.lib"
 				ModuleDefinitionFile="export.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -98,7 +100,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="..\..\..\product\win32"
-			IntermediateDirectory="$(ConfigurationName)"
+			IntermediateDirectory="..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="2"
 			CharacterSet="1"
 			WholeProgramOptimization="1"
@@ -178,8 +180,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release_Baidu|Win32"
-			OutputDirectory="$(ConfigurationName)"
-			IntermediateDirectory="$(ConfigurationName)"
+			OutputDirectory="..\..\..\product\win32"
+			IntermediateDirectory="..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="2"
 			CharacterSet="1"
 			WholeProgramOptimization="1"

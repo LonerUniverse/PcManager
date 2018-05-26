@@ -17,8 +17,8 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="../../../../product/win32d"
-			IntermediateDirectory="$(ConfigurationName)"
+			OutputDirectory="..\..\..\..\product\win32d"
+			IntermediateDirectory="..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="2"
 			UseOfMFC="0"
 			UseOfATL="2"
@@ -104,8 +104,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="../../../../product/win32"
-			IntermediateDirectory="$(ConfigurationName)"
+			OutputDirectory="..\..\..\..\product\win32"
+			IntermediateDirectory="..\..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="2"
 			CharacterSet="1"
 			WholeProgramOptimization="1"
@@ -186,8 +186,8 @@
 		</Configuration>
 		<Configuration
 			Name="Release_Baidu|Win32"
-			OutputDirectory="$(ConfigurationName)"
-			IntermediateDirectory="$(ConfigurationName)"
+			OutputDirectory="..\..\..\..\product\win32"
+			IntermediateDirectory="..\..\..\..\temp\$(ProjectName)\$(ConfigurationName)"
 			ConfigurationType="2"
 			CharacterSet="1"
 			WholeProgramOptimization="1"

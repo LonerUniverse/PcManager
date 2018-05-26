@@ -38,11 +38,6 @@ BEGIN
     "\0"
 END
 
-3 TEXTINCLUDE 
-BEGIN
-    "1 TYPELIB ""bksafesvc.tlb""\r\n"
-    "\0"
-END
 
 #endif    // APSTUDIO_INVOKED
 
@@ -89,7 +84,7 @@ END
 //
 // Generated from the TEXTINCLUDE 3 resource.
 //
-1 TYPELIB "bksafesvc.tlb"
+//1 TYPELIB "bksafesvc.tlb"
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED

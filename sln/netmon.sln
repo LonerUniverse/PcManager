@@ -1,12 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netmon", "..\src\src_kpfw\netmon\netmon\netmon.vcproj", "{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}"
-	ProjectSection(WebsiteProperties) = preProject
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.Debug = "False"
-	EndProjectSection
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FwProxy", "..\src\src_kpfw\fwproxy\fwproxy.vcproj", "{9128108D-4FD7-4464-977E-E0EAC757D1BD}"
 	ProjectSection(WebsiteProperties) = preProject
 		Debug.AspNetCompiler.Debug = "True"
@@ -19,22 +13,21 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "safemoniternetflow", "..\sr
 		Release.AspNetCompiler.Debug = "False"
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "netmon", "..\src\src_kpfw\netmon\netmon\netmon.vcproj", "{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug ModUrl|Win32 = Debug ModUrl|Win32
 		Debug|Win32 = Debug|Win32
 		Release ModUrl|Win32 = Release ModUrl|Win32
 		Release|Win32 = Release|Win32
+		Release64|Win32 = Release64|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Debug ModUrl|Win32.ActiveCfg = Debug|Win32
-		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Debug ModUrl|Win32.Build.0 = Debug|Win32
-		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Debug|Win32.ActiveCfg = Debug|Win32
-		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Debug|Win32.Build.0 = Debug|Win32
-		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release ModUrl|Win32.ActiveCfg = Release|Win32
-		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release ModUrl|Win32.Build.0 = Release|Win32
-		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release|Win32.ActiveCfg = Release|Win32
-		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release|Win32.Build.0 = Release|Win32
 		{9128108D-4FD7-4464-977E-E0EAC757D1BD}.Debug ModUrl|Win32.ActiveCfg = Debug ModUrl|Win32
 		{9128108D-4FD7-4464-977E-E0EAC757D1BD}.Debug ModUrl|Win32.Build.0 = Debug ModUrl|Win32
 		{9128108D-4FD7-4464-977E-E0EAC757D1BD}.Debug|Win32.ActiveCfg = Debug|Win32
@@ -43,6 +36,7 @@ Global
 		{9128108D-4FD7-4464-977E-E0EAC757D1BD}.Release ModUrl|Win32.Build.0 = Release ModUrl|Win32
 		{9128108D-4FD7-4464-977E-E0EAC757D1BD}.Release|Win32.ActiveCfg = Release|Win32
 		{9128108D-4FD7-4464-977E-E0EAC757D1BD}.Release|Win32.Build.0 = Release|Win32
+		{9128108D-4FD7-4464-977E-E0EAC757D1BD}.Release64|Win32.ActiveCfg = Release ModUrl|x64
 		{398334DB-AD73-42CB-8C27-FB77E3C5546B}.Debug ModUrl|Win32.ActiveCfg = Debug|Win32
 		{398334DB-AD73-42CB-8C27-FB77E3C5546B}.Debug ModUrl|Win32.Build.0 = Debug|Win32
 		{398334DB-AD73-42CB-8C27-FB77E3C5546B}.Debug|Win32.ActiveCfg = Debug|Win32
@@ -51,6 +45,18 @@ Global
 		{398334DB-AD73-42CB-8C27-FB77E3C5546B}.Release ModUrl|Win32.Build.0 = Release|Win32
 		{398334DB-AD73-42CB-8C27-FB77E3C5546B}.Release|Win32.ActiveCfg = Release|Win32
 		{398334DB-AD73-42CB-8C27-FB77E3C5546B}.Release|Win32.Build.0 = Release|Win32
+		{398334DB-AD73-42CB-8C27-FB77E3C5546B}.Release64|Win32.ActiveCfg = Release|Win32
+		{398334DB-AD73-42CB-8C27-FB77E3C5546B}.Release64|Win32.Build.0 = Release|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Debug ModUrl|Win32.ActiveCfg = Debug|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Debug ModUrl|Win32.Build.0 = Debug|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Debug|Win32.Build.0 = Debug|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release ModUrl|Win32.ActiveCfg = Release64|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release ModUrl|Win32.Build.0 = Release64|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release|Win32.ActiveCfg = Release|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release|Win32.Build.0 = Release|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release64|Win32.ActiveCfg = Release64|Win32
+		{C40030BF-ECFB-4A26-9AD6-86B3F3DD06E1}.Release64|Win32.Build.0 = Release64|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

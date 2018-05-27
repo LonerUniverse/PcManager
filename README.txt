@@ -25,4 +25,6 @@ http://code.ijinshan.com/download/LIB4pcmanager.tbz
 编译
 -------------------------------------------------------------------------------
 
+## 编译说明
+使用vs2005 sp2 编译，需要windows sdk 7.1。
 

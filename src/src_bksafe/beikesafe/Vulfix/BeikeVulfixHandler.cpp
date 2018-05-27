@@ -1962,41 +1962,41 @@ LRESULT CBeikeVulfixHandler::OnVulTipIgnore(UINT uMsg, WPARAM wParam, LPARAM lPa
 }
 LRESULT CBeikeVulfixHandler::OnSelectedChanged(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 {
-    int nCount;
-    CString strSize;
-    CString strFSize;
-    CString strCount;
-    int total = m_wndListCtrlVul.GetItemCount(); 
-
-    nCount = 0;
-    m_uDownTotalSize = 0;
-    m_uCurrentDownSize = 0;
-
-    for (int i = 0; i < total; ++i)
-    {
-        if (m_wndListCtrlVul.GetCheckState(i) &&
-            !(m_wndListCtrlVul._GetItemData(i)->dwFlags & (LISTITEM_TITLE|LISTITEM_RADIOBOX)))
-        {
-            T_VulListItemData* pItem = (T_VulListItemData*)m_wndListCtrlVul.GetItemData(i);
-            m_uDownTotalSize += pItem->nFileSize;
-            nCount ++;
-        }
-//         else if (m_wndListCtrlVul._GetItemData(i)->dwFlags & (LISTITEM_TITLE|LISTITEM_RADIOBOX))
-//         {
-//             total--;
-//         }
-    }
-    if (nCount == m_nTotalVulNum && m_nTotalVulNum != 0)
-        SetItemCheck(IDC_LBL_VULFIX_RESULT_CHECK_ALL, TRUE);
-    else
-        SetItemCheck(IDC_LBL_VULFIX_RESULT_CHECK_ALL, FALSE);
-
-    strCount.Format(BkString::Get(IDS_VULFIX_5173), nCount);
-    FormatSizeString(m_uDownTotalSize, strFSize);
-    strSize.Format(BkString::Get(IDS_VULFIX_5174), strFSize);
-
-    SetItemText(IDC_TXT_VULFIX_SELECT_NUM, strCount);
-    SetItemText(IDC_TXT_VULFIX_SELCET_SIZE, strSize);
+//    int nCount;
+//    CString strSize;
+//    CString strFSize
+//    CString strCount;
+//    int total = m_wndListCtrlVul.GetItemCount(); 
+//
+//    nCount = 0;
+//    m_uDownTotalSize = 0;
+//    m_uCurrentDownSize = 0;
+//
+//    for (int i = 0; i < total; ++i)
+//    {
+//        if (m_wndListCtrlVul.GetCheckState(i) &&
+//            !(m_wndListCtrlVul._GetItemData(i)->dwFlags & (LISTITEM_TITLE|LISTITEM_RADIOBOX)))
+//        {
+//            T_VulListItemData* pItem = (T_VulListItemData*)m_wndListCtrlVul.GetItemData(i);
+//            m_uDownTotalSize += pItem->nFileSize;
+//            nCount ++;
+//        }
+////         else if (m_wndListCtrlVul._GetItemData(i)->dwFlags & (LISTITEM_TITLE|LISTITEM_RADIOBOX))
+////         {
+////             total--;
+////         }
+//    }
+//    if (nCount == m_nTotalVulNum && m_nTotalVulNum != 0)
+//        SetItemCheck(IDC_LBL_VULFIX_RESULT_CHECK_ALL, TRUE);
+//    else
+//        SetItemCheck(IDC_LBL_VULFIX_RESULT_CHECK_ALL, FALSE);
+//
+//    strCount.Format(BkString::Get(IDS_VULFIX_5173), nCount);
+//    FormatSizeString(m_uDownTotalSize, strFSize);
+//    strSize.Format(BkString::Get(IDS_VULFIX_5174), strFSize);
+//
+//    SetItemText(IDC_TXT_VULFIX_SELECT_NUM, strCount);
+//    SetItemText(IDC_TXT_VULFIX_SELCET_SIZE, strSize);
 
     return TRUE;
 }

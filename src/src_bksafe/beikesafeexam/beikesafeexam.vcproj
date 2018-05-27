@@ -43,7 +43,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="E:\winsdk\v6.1\Include;../../import;../../publish;../../publish/scanengine/kxescan/systemsecurityex;../../import/kxe_improve_publish;../../import/kws_publish;../../publish/scanengine"
+				AdditionalIncludeDirectories="../../import;../../publish;../../publish/scanengine/kxescan/systemsecurityex;../../import/kxe_improve_publish;../../import/kws_publish;../../publish/scanengine"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;BEIKESAFEEXAM_EXPORTS"
 				MinimalRebuild="true"
 				ExceptionHandling="1"
@@ -66,10 +66,11 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="scanlib.lib kwslib.lib svclib.lib"
+				AdditionalDependencies="scanlib.lib kwslib.lib svclib.lib lib_jsonMTD.lib"
 				OutputFile="$(OutDir)\ksafeexam.dll"
 				LinkIncremental="2"
-				AdditionalLibraryDirectories="E:\winsdk\v6.1\Lib;..\..\import\kxe_improve_lib\win32d;..\..\..\lib\win32d"
+				AdditionalLibraryDirectories="..\..\import\kxe_improve_lib\win32d;..\..\..\lib\win32d"
+				IgnoreDefaultLibraryNames="atlsd.lib;lib_jsonMT.lib;LIBCMT.lib"
 				ModuleDefinitionFile="export.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -129,7 +130,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="E:\winsdk\v6.1\Include;../../import;../../publish;../../src_kws;../../publish/scanengine/kxescan/systemsecurityex;../../import/kxe_improve_publish;../../import/kws_publish;../../src_kws/include;../../publish/scanengine"
+				AdditionalIncludeDirectories="../../import;../../publish;../../src_kws;../../publish/scanengine/kxescan/systemsecurityex;../../import/kxe_improve_publish;../../import/kws_publish;../../src_kws/include;../../publish/scanengine"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;BEIKESAFEEXAM_EXPORTS"
 				ExceptionHandling="1"
 				RuntimeLibrary="0"
@@ -153,7 +154,7 @@
 				AdditionalDependencies="scanlib.lib kwslib.lib svclib.lib"
 				OutputFile="$(OutDir)\ksafeexam.dll"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="E:\winsdk\v6.1\Lib;..\..\import\kxe_improve_lib\win32\base_lib;..\..\..\lib\win32"
+				AdditionalLibraryDirectories="..\..\import\kxe_improve_lib\win32\base_lib;..\..\..\lib\win32"
 				ModuleDefinitionFile="export.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"
@@ -216,7 +217,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="E:\winsdk\v6.1\Include;../../import;../../publish;../../src_kws;../../publish/scanengine/kxescan/systemsecurityex;../../import/kxe_improve_publish;../../import/kws_publish;../../import/kws_include;../../publish/scanengine"
+				AdditionalIncludeDirectories="../../import;../../publish;../../src_kws;../../publish/scanengine/kxescan/systemsecurityex;../../import/kxe_improve_publish;../../import/kws_publish;../../import/kws_include;../../publish/scanengine"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;BEIKESAFEEXAM_EXPORTS"
 				ExceptionHandling="1"
 				RuntimeLibrary="0"
@@ -239,7 +240,7 @@
 				Name="VCLinkerTool"
 				OutputFile="$(OutDir)\ksafeexam.dll"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="E:\winsdk\v6.1\Lib;..\..\import\kxe_improve_lib\win32\base_lib"
+				AdditionalLibraryDirectories="..\..\import\kxe_improve_lib\win32\base_lib"
 				ModuleDefinitionFile="export.def"
 				GenerateDebugInformation="true"
 				SubSystem="2"

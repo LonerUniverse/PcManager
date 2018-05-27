@@ -490,30 +490,30 @@ LRESULT CBeikeSafeSysOptUIHandler::OnWmScanEnd( UINT uMsg, WPARAM wParam, LPARAM
 		}
 	}
 
-	if (GetSubScanEnd(0) == TRUE)
-	{
-		LoadIgnoredID();
-		GetIgnoredItem();
-		m_OneKeyOptList.DeleteAllItems();
-		m_OneKeyOptList.InitArray(m_arrayOnekeyOptItem, m_bDelayRunValid);
-		CString strFormat;
-		strFormat.Format(BkString::Get(IDS_SYSOPT_4112), m_OneKeyOptList.GetTotalCount());
-		m_dlg->SetRichText(IDC_RICHTEXT_ONEKEYOPT_SCANNING, strFormat);
-		m_dlg->EnableItem(IDC_LNK_AUTOOPT_TOP_REFRESH, TRUE);
-		m_dlg->EnableItem(IDC_LNK_SHOW_IGNORED, TRUE);
-		m_dlg->EnableItem(IDC_LNK_AUTOOPT_CANCELALL, TRUE);
-		InitAutoOptList();
-	}
-	else
-	{
-		LoadIgnoredID();
-		GetIgnoredItem();
-		m_OneKeyOptList.DeleteAllItems();
-		m_OneKeyOptList.InitArray(m_arrayOnekeyOptItem, m_bDelayRunValid);
-		CString strFormat;
-		strFormat.Format(BkString::Get(IDS_SYSOPT_4112), m_OneKeyOptList.GetTotalCount());
-		m_dlg->SetRichText(IDC_RICHTEXT_ONEKEYOPT_SCANNING, strFormat);
-	}
+	//if (GetSubScanEnd(0) == TRUE)
+	//{
+	//	LoadIgnoredID();
+	//	GetIgnoredItem();
+	//	m_OneKeyOptList.DeleteAllItems();
+	//	m_OneKeyOptList.InitArray(m_arrayOnekeyOptItem, m_bDelayRunValid);
+	//	CString strFormat;
+	//	strFormat.Format(BkString::Get(IDS_SYSOPT_4112), m_OneKeyOptList.GetTotalCount());
+	//	m_dlg->SetRichText(IDC_RICHTEXT_ONEKEYOPT_SCANNING, strFormat);
+	//	m_dlg->EnableItem(IDC_LNK_AUTOOPT_TOP_REFRESH, TRUE);
+	//	m_dlg->EnableItem(IDC_LNK_SHOW_IGNORED, TRUE);
+	//	m_dlg->EnableItem(IDC_LNK_AUTOOPT_CANCELALL, TRUE);
+	//	InitAutoOptList();
+	//}
+	//else
+	//{
+	//	LoadIgnoredID();
+	//	GetIgnoredItem();
+	//	m_OneKeyOptList.DeleteAllItems();
+	//	m_OneKeyOptList.InitArray(m_arrayOnekeyOptItem, m_bDelayRunValid);
+	//	CString strFormat;
+	//	strFormat.Format(BkString::Get(IDS_SYSOPT_4112), m_OneKeyOptList.GetTotalCount());
+	//	m_dlg->SetRichText(IDC_RICHTEXT_ONEKEYOPT_SCANNING, strFormat);
+	//}
 
 	return S_OK;
 }
@@ -1679,19 +1679,19 @@ void CBeikeSafeSysOptUIHandler::ShowNoHistoryInfo()
 
 void CBeikeSafeSysOptUIHandler::RefreshTabNumber_History()
 {
-	GenerateHistoryList();
-	int nItemCount = 0;
-	for(int i = 0;i < m_vecHistoryItem.size();i++ )
-	{
-		if (m_vecHistoryItem[i]->bTitle == FALSE)
-			nItemCount++;
-	}
+	//GenerateHistoryList();
+	//int nItemCount = 0;
+	//for(int i = 0;i < m_vecHistoryItem.size();i++ )
+	//{
+	//	if (m_vecHistoryItem[i]->bTitle == FALSE)
+	//		nItemCount++;
+	//}
 
-	CString strFormat;
-	strFormat.Format(BkString::Get(IDS_SYSOPT_4096),
-		nItemCount
-		);
-	m_dlg->SetTabTitle(IDC_TAB_RUNOPT_TYPE, 3, strFormat);
+	//CString strFormat;
+	//strFormat.Format(BkString::Get(IDS_SYSOPT_4096),
+	//	nItemCount
+	//	);
+	//m_dlg->SetTabTitle(IDC_TAB_RUNOPT_TYPE, 3, strFormat);
 }
 
 bool compare(const RUNOPT_HISTORY_DATA* data1,const RUNOPT_HISTORY_DATA* data2)
@@ -1903,10 +1903,10 @@ void CBeikeSafeSysOptUIHandler::_OpenKSafePage()
 
 	CString strURL = L"", strUrl2 = L"";
 
-	//http://www.ijinshan.com/safe/tools/index.html?type=%d&pid=%s&oem=%s&ver=%s
-	//type是为了以后区分来源使用，现在默认是0
-	strURL.Format(BkString::Get(IDS_EXAM_1440), 0, _Module.GetPID(), 
-		_Module.GetOrgOem(), _Module.GetProductVersion());
+	////http://www.ijinshan.com/safe/tools/index.html?type=%d&pid=%s&oem=%s&ver=%s
+	////type是为了以后区分来源使用，现在默认是0
+	//strURL.Format(BkString::Get(IDS_EXAM_1440), 0, _Module.GetPID(), 
+	//	_Module.GetOrgOem(), _Module.GetProductVersion());
 
 	//防止联网失败，调用本地页面
 	if ( SUCCEEDED(CAppPath::Instance().GetLeidianDataPath(strUrl2)) )

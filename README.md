@@ -18,7 +18,7 @@ KSafe README
 代码在win7 sp1， win8.1， win10 上编译均可。
 
 bdev分支整理了下工程文件。独立的工程文件放在 oss 目录下。
-https://github.com/5455945/PcManager/tree/bdev/oss/
+https://github.com/LonerUniverse/PcManager/tree/bdev/oss/
 
 包括:
 ```
@@ -31,39 +31,39 @@ kclear     #0009 垃圾清理            bdev/oss/kclear/sln/kclear.sln
 ```
 
 金山卫士主界面
-https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_KSafeMain.png
+https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_KSafeMain.png
 
-![KSafeMain](https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_KSafeMain.png)
+![KSafeMain](https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_KSafeMain.png)
 
 卫士ARP防火墙
-https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_karpfw.png
+https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_karpfw.png
 
-![karpfw](https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_karpfw.png)
+![karpfw](https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_karpfw.png)
 
 漏洞修复
-https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_beikesafevul.png
+https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_beikesafevul.png
 
-![beikesafevul](https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_beikesafevul.png)
+![beikesafevul](https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_beikesafevul.png)
 
 系统优化
-https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_bksafesysopt.png
+https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_bksafesysopt.png
 
-![bksafesysopt](https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_bksafesysopt.png)
+![bksafesysopt](https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_bksafesysopt.png)
 
 隐私保护
-https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_PrivacyProtection.png
+https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_PrivacyProtection.png
 
-![PrivacyProtection](https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_PrivacyProtection.png)
+![PrivacyProtection](https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_PrivacyProtection.png)
 
 垃圾清理
-https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_kclrshell.png
+https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_kclrshell.png
 
-![kclrshell](https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_kclrshell.png)
+![kclrshell](https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_kclrshell.png)
 
 主工程的sln文件在PcManager\sln下。是ksafe.sln，需要先编译commonlib.sln。
 
 release可运行，效果如下:
 
-https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_ksafe.png
+https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_ksafe.png
 
-![ksafe](https://github.com/5455945/PcManager/blob/bdev/doc/img/doc_img_ksafe.png)
+![ksafe](https://github.com/LonerUniverse/PcManager/blob/bdev/doc/img/doc_img_ksafe.png)
